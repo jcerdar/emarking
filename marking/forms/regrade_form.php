@@ -91,6 +91,9 @@ class emarking_regrade_form extends moodleform {
         if ($data ["criterion"] == 0) {
             $errors ["criterion"] = get_string("criterionrequired", "mod_emarking");
         }
+        if ($data ["motive"] == 0) {
+            $errors ["motive"] = get_string("motiverequired", "mod_emarking");
+        }
         if (strlen($data ["comment"]) < 10) {
             $errors ["comment"] = get_string("justificationrequired", "mod_emarking");
         }
