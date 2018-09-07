@@ -51,14 +51,6 @@ echo $OUTPUT->heading($emarking->name);
 // Print eMarking tabs.
 echo $OUTPUT->tabtree(emarking_tabs($context, $cm, $emarking), "report");
 
-//Temporary fix para emarking//
-if(true){
-    echo $OUTPUT->notification('Estimados Profesores/Ayudantes esta sección se encuentra deshabilitada por presentar problemas para la plataforma, estará disponible proximamente.', 'notifyproblem');
-    echo $OUTPUT->footer();
-    die();
-}
-//End Temporary fix para emarking//
-
 $totalsubmissions = $DB->count_records_sql(
         "
                 SELECT COUNT(DISTINCT s.id) AS total
@@ -197,8 +189,7 @@ FROM (
             INNER JOIN {course_categories} cc ON (c.category = cc.id)
             WHERE d.grade > 0 AND d.status >= " . EMARKING_STATUS_PUBLISHED . "
             ORDER BY a.id asc, d.grade asc) AS G
-        GROUP BY categoryid, emarkingid
-        with rollup) AS T";
+        GROUP BY categoryid, emarkingid) AS T";
 $emarkingstats = $DB->get_recordset_sql($sql);
 $sqlcriteria = '
                 SELECT
