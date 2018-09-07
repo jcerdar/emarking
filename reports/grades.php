@@ -50,6 +50,15 @@ echo $OUTPUT->header();
 echo $OUTPUT->heading($emarking->name);
 // Print eMarking tabs.
 echo $OUTPUT->tabtree(emarking_tabs($context, $cm, $emarking), "report");
+
+//Temporary fix para emarking//
+if(true){
+    echo $OUTPUT->notification('Estimados Profesores/Ayudantes esta sección se encuentra deshabilitada por presentar problemas para la plataforma, estará disponible proximamente.', 'notifyproblem');
+    echo $OUTPUT->footer();
+    die();
+}
+//End Temporary fix para emarking//
+
 $totalsubmissions = $DB->count_records_sql(
         "
                 SELECT COUNT(DISTINCT s.id) AS total
