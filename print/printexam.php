@@ -91,7 +91,7 @@ echo $OUTPUT->heading(get_string('printexam', 'mod_emarking'));
 // Default printer.
 $result = exec('lpstat -p -d');
 $parts = explode(":", $result);
-if (! $debugprinting) {
+/*if (! $debugprinting) {
     if (count($parts) != 2) {
         echo $OUTPUT->notification(
                 'Invalid printer setup.
@@ -102,7 +102,7 @@ if (! $debugprinting) {
         $printer = strtoupper(trim($parts [1]));
         echo $OUTPUT->box('Default printer: ' . $printer);
     }
-}
+}*/
 if ($data = $form->get_data()) {
     $idprinter = $data->printername;
     $sqlprinter = "SELECT id, ip
