@@ -82,12 +82,12 @@ YUI().use('io', 'json-parse', 'node', 'dump', 'console', 'datatable-mutable', 'p
 	// When the addRowBtn is pressed, show the modal form.
 	Y.all('.downloademarking').on('click', function (e) {
 		var url = downloadurl +
-		'?examid=' + e.target.getAttribute('examid') +
+		'?examid=' + e.target.getAttribute('title') +
 		'&sesskey=' + sessionkey;
 		Y.log(url);
 		// We show the loading panel while we load the whole interface.
 		loadingpanel.show();
-		currentExamId = e.target.getAttribute('examid');
+		currentExamId = e.target.getAttribute('title');  
 		currentButton = e.target;
 		currentButton.hide();
 		Y.io(url, callback);
@@ -107,14 +107,16 @@ YUI().use('io', 'json-parse', 'node', 'dump', 'console', 'datatable-mutable', 'p
 						alert('JSON Parse failed!');
 						return;
 					}
+					loadingpanel.hide();
 					Y.log('PARSED DATA: ' + Y.Lang.dump(messages));
 					// Use the Node API to apply the new innerHTML to the target.
+					
 					if(messages['error'] == '') {
-						loadingpanel.hide();
+						//loadingpanel.hide();
 						panel.show();
 					} else {
 						alert(messages['error']);
-						loadingpanel.hide();
+						//loadingpanel.hide();
 						currentButton.show();
 					}
 				},

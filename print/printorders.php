@@ -203,10 +203,11 @@ foreach ($exams as $exam) {
     // Download exam link.
     if($exam->status == EMARKING_EXAM_PROCESSED) {
         $actions .= html_writer::div(
-            $OUTPUT->pix_icon("i/down", get_string("download"), null,
+            $OUTPUT->pix_icon("i/down", $exam->id, null, 
                     array(
+                    		"id" => $exam->id,
                         "examid" => $exam->id,
-                        "class" => "downloademarking")));
+                        "class" => "downloademarking"))); 
     } else if($exam->status == EMARKING_EXAM_UPLOADED) {
         $actions .= html_writer::div(
                 $OUTPUT->pix_icon("i/scheduled", get_string('examgenerationscheduled', 'mod_emarking'), null));
@@ -362,6 +363,7 @@ $("#searchInput").keyup(function () {
     };
 	var wwwroot = "<?php echo $CFG->wwwroot ?>";
 	var downloadurl = "<?php echo $downloadurl ?>";
+	var examid = "<?php echo $examid?>";
 	var sessionkey = "<?php echo sesskey() ?>";
 	var multipdfs = "0";
 	var incourse = "0";
