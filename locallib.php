@@ -1842,7 +1842,7 @@ function emarking_enrol_user($userid, $courseid) {
  */
 function emarking_unenrol_user($userid, $courseid) {
     global $DB;
-    if (!$emarkingactivities = $DB->get_records('emarking', array(
+    /*if (!$emarkingactivities = $DB->get_records('emarking', array(
         'course' => $courseid
     ))) {
         // Nothing to do as there are no emarking activities in the course.
@@ -1869,6 +1869,7 @@ function emarking_unenrol_user($userid, $courseid) {
         }
     }
     return true;
+    */
 }
 
 /**
