@@ -232,7 +232,7 @@ if (has_capability("mod/emarking:downloadexam", $context)) {
              core_text::strtolower(get_string('examstatusbeingprocessed', 'mod_emarking')) : get_string('downloadexam', 'mod_emarking');
     $disabled = $exam->status < EMARKING_EXAM_BEING_PROCESSED ? 'disabled' : '';
     if (! $directdownload) {
-        $downloadexambutton = "<input type='button' class='downloademarking btn btn-default' examid ='$exam->id' value='" . $buttontext .
+        $downloadexambutton = "<input type='button' class='downloademarking btn btn-default' title ='$exam->id' value='" . $buttontext .
                  "' $disabled>";
         echo $downloadexambutton;
     } else {
@@ -241,6 +241,7 @@ if (has_capability("mod/emarking:downloadexam", $context)) {
                     'sesskey' => sesskey(),
                     'multi' => 0,
                     'incourse' => 1,
+                	'title' => $exam->id,
                     'examid' => $exam->id));
         echo $OUTPUT->single_button($directdownloadurl, $buttontext, 'GET');
     }
