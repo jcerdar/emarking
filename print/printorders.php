@@ -261,7 +261,7 @@ foreach ($exams as $exam) {
                 'examid' => $exam->id,
                 'downloadform' => 'true'));
     $actions .= html_writer::div(
-            $OUTPUT->action_icon($urldownloadform, new pix_icon("i/report", get_string("downloadform", "mod_emarking"))));
+            $OUTPUT->action_icon($urldownloadform, new pix_icon("i/log", get_string("downloadform", "mod_emarking"))));
     // Change cost configuration.
     $urlcost = new moodle_url('/mod/emarking/reports/exammodification.php',
             array(
