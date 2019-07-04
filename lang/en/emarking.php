@@ -24,7 +24,7 @@
 // EXCEPTION DIGITIZING
 $string['qrextractorconfigrequired'] = 'FATAL ERROR: config.php file in emarking/lib/qrextractor is required to digitize answers';
 // MARKING BUTTONS.
-$string['buttonrubric'] = 'Rubric';
+$string['buttonrubric'] = 'Assessment guideline';
 $string['buttoncomment'] = 'Comment';
 $string['buttontick'] = 'Tick';
 $string['buttoncross'] = 'Cross';
@@ -59,7 +59,7 @@ $string ['scan'] = 'Scan';
 $string ['enablescan'] = 'Enable scan';
 $string ['scanisenabled'] = 'Scanning is enabled. Marking is done manually and student answers are digitized and uploaded to the system.';
 $string ['scanwasenabled'] = 'Scan was enabled successfully';
-$string ['osmisenabled'] = 'Scanning is enabled. Student answers are digitized and uploaded to the system for On Screen Marking using a rubric.';
+$string ['osmisenabled'] = 'Scanning is enabled. Student answers are digitized and uploaded to the system for On Screen Marking using an assessment guideline.';
 $string ['enableosm'] = 'Enable OSM';
 $string ['enableosm_help'] = 'You must enable scan before you can enable OSM';
 $string ['emarkingwithnoexam'] = 'There is a configuration problem with your activity. Please notify the administrator.';
@@ -107,26 +107,26 @@ $string ['justificationrequired'] = 'You must justify your request';
 // MARKERS AND PAGES OSM CONFIGURATION.
 $string ['markerspercriteria'] = 'Markers';
 $string ['pagespercriteria'] = 'Pages';
-$string ['markerscanseewholerubric'] = 'Markers can see the entire rubric.';
+$string ['markerscanseewholerubric'] = 'Markers can see the entire assessment guideline.';
 $string ['markerscanseeallpages'] = 'Markers can see all pages.';
 $string ['markerscanseeselectedcriteria'] = 'Markers can see only assigned criteria.';
 $string ['markerscanseenothing'] = 'Pages are assigned to criteria but no markers are assigned to criteria. Only admins will be able to see pages.';
 $string ['markerscanseepageswithcriteria'] = 'Markers can see only those pages assigned to the criteria they can mark.';
 $string ['assignedmarkers'] = 'Assigned markers';
 $string ['assignedoutcomes'] = 'Assigned outcomes';
-$string ['nooutcomesassigned'] = 'There are no outcomes associated to this exam\'s rubric';
+$string ['nooutcomesassigned'] = 'There are no outcomes associated to this exam\'s assessment guideline';
 $string ['assignmarkerstocriteria'] = 'Add markers to criteria';
 $string ['assignoutcomestocriteria'] = 'Add outcomes to criteria';
 $string ['currentstatus'] = 'Current status';
 $string ['noneditingteacherconfiguration'] = 'As a Non-editing teacher you can not change de settings.';
-$string ['coursehasnooutcomes'] = 'The course has no outcomes associated. You must also associate outcomes to the emarking activity. You must associate at least one outcome in order to link them with the rubric.';
+$string ['coursehasnooutcomes'] = 'The course has no outcomes associated. You must also associate outcomes to the emarking activity. You must associate at least one outcome in order to link them with the assessment guideline.';
 $string ['gotooutcomessettings'] = 'Go to outcome settings';
-$string ['emarkinghasnooutcomes'] = 'The emarking activity has no outcomes associated. You must associate at least one outcome in order to link them with the rubric.';
+$string ['emarkinghasnooutcomes'] = 'The emarking activity has no outcomes associated. You must associate at least one outcome in order to link them with the assessment guideline.';
 $string ['gotoemarkingsettings'] = 'Go to emarking settings';
 $string ['emarkingdst'] = 'Destination EMarking';
 $string ['emarkingdst_help'] = 'Choose the EMarking activities that will copy their settings from the current activity';
-$string ['override'] = 'Override rubric in destination EMarking';
-$string ['override_help'] = 'Overrides any rubric configured in the destination EMarking activity and copies the current one';
+$string ['override'] = 'Override assessment guideline in destination EMarking';
+$string ['override_help'] = 'Overrides any assessment guideline configured in the destination EMarking activity and copies the current one';
 $string ['overridemarkers'] = 'Override designated markers in destination EMarking';
 $string ['overridemarkers_help'] = 'Overrides any designated marker in the destination EMarking activity by copying current markers';
 $string ['noparallelemarkings'] = 'There are no EMarking exams in parallel courses';
@@ -134,12 +134,12 @@ $string ['scalelevels'] = 'Percentages per level';
 $string ['studentachievement'] = 'Students %';
 $string ['level'] = 'Achievement level';
 $string ['outcomesnotconfigured'] = 'Outcomes have not yet been setup for this E-Marking activity';
-$string['coloredrubricforced'] = 'Force colored rubric';
-$string['coloredrubricforced_help'] = 'Forces all Emarking activities to use colored rubrics and ignore user settings';
+$string['coloredrubricforced'] = 'Force colored assessment guideline';
+$string['coloredrubricforced_help'] = 'Forces all Emarking activities to use colored assessment guidelines and ignore user settings';
 $string['formativefeedbackonly'] = 'Formative feedback only';
-$string['formativefeedbackonly_help'] = 'Does not show any summative feedback (scores in rubric, final grade)';
-$string['rubriclevelsorting'] = 'Rubric levels sorting';
-$string['rubriclevelsorting_help'] = 'Indicates how levels in each criterion of the rubric will be sorted. It can be ascending or descending.';
+$string['formativefeedbackonly_help'] = 'Does not show any summative feedback (scores in assessment guideline, final grade)';
+$string['rubriclevelsorting'] = 'Assessment guideline levels sorting';
+$string['rubriclevelsorting_help'] = 'Indicates how levels in each criterion of the assessment guideline will be sorted. It can be ascending or descending.';
 // GENERAL.
 $string ['criteria'] = 'Criteria';
 $string ['deleterow'] = 'Delete row';
@@ -292,8 +292,8 @@ $string ['updatemark'] = 'Update mark';
 $string ['notenoughstudenstforpeerreview'] = 'Not enough students enrolled for a peer review session';
 $string ['reassignpeers'] = 'Reassign peers';
 $string ['markernotassigned'] = 'Not assigned';
-$string ['importemarking'] = 'Import answers & rubric';
-$string ['importemarking_help'] = 'Import EMarking allows the reuse of students\'s answers and rubric from another EMarking activity.';
+$string ['importemarking'] = 'Import answers & assessment guideline';
+$string ['importemarking_help'] = 'Import EMarking allows the reuse of students\'s answers and assessment guideline from another EMarking activity.';
 $string ['donotimport'] = 'Do not import';
 // ANONYMOUS.
 $string ['studentanonymous_markervisible'] = 'Student anonymous / Marker visible';
@@ -306,14 +306,14 @@ $string ['anonymousstudent'] = 'Anonymous student';
 $string ['yespeerisanonymous'] = 'Yes (Peer is anonymous)';
 $string ['viewpeers'] = 'Students can review peers\' exams';
 $string ['viewpeers_help'] = 'Students are allowed to see their peers\' exams in an anonymous way';
-// EMARKING IMPORT RUBRIC.
-$string ['rubriclevel'] = 'Rubric level';
-$string ['importrubric'] = 'Import rubric';
+// EMARKING IMPORT ASSESSMENT GUIDELINE.
+$string ['rubriclevel'] = 'Assessment guideline level';
+$string ['importrubric'] = 'Import assessment guideline';
 $string ['pastefromexcel'] = 'Paste from Excel';
 $string ['pastefromexcel_help'] = 'Select the desired cells in Excel, copy them  and then paste them in the text box';
-$string ['rubricneeded'] = 'EMarking requires a rubric for marking, please create one by hand or import it from Excel';
-$string ['rubricdraft'] = 'EMarking requires a ready rubric, the rubric is in status draft. Please complete rubric';
-$string ['confirmimport'] = 'Below is the rubric that will be created, please check that all details are correct. NOTE: The rubric can be modified later in the editor.';
+$string ['rubricneeded'] = 'EMarking requires an assessment guideline for marking, please create one by hand or import it from Excel';
+$string ['rubricdraft'] = 'EMarking requires a ready assessment guideline, the assessment guideline is in status draft. Please complete assessment guideline';
+$string ['confirmimport'] = 'Below is the assessment guideline that will be created, please check that all details are correct. NOTE: The assessment guideline can be modified later in the editor.';
 // E-MARKING TYPES.
 $string ['markingtype'] = 'Marking type';
 $string ['markingtype_help'] = '<h2>Marking types</h2><br>
@@ -321,7 +321,7 @@ $string ['markingtype_help'] = '<h2>Marking types</h2><br>
 		<ul>
 			<li><b>Print only</b>: Exams are sent for printing through the system, marking is done manually and grades can be optionally uploaded to gradebook.</li>
 			<li><b>Print and scan</b>: Exams are sent for printing through the system, marking is done manually and student answers are digitized and uploaded to the system. Optionally grades can be set in the gradebook.</li>
-            <li><b>On Screen Marking</b>: Exams are printed and answers digitized and marked on screen according to a rubric. Exams can be marked more than once for quality control on inter-marker agreement.</li>
+            <li><b>On Screen Marking</b>: Exams are printed and answers digitized and marked on screen according to an assessment guideline. Exams can be marked more than once for quality control on inter-marker agreement.</li>
 			<li><b>Markers training</b>: Exams do not belong to students in the course. All markers grade all exams and the process does not close until 100% agreement is reached between markers.</li>
 			<li><b>Student training</b>: Exams do not belong to students in the course. Students grade exams as a way to practice for their own evaluations.</li>
 			<li><b>Peer review</b>: Students grade their peers according to the groups configuration. If groups are configured as visible or separated each student in a group marks all exams from another group.</li>
@@ -460,7 +460,7 @@ $string ['exportgrades'] = 'Export grades';
 $string ['exportagreement'] = 'Export agreement';
 $string ['comparativereport'] = 'Comparative';
 $string ['comparativereport_help'] = 'Comparative';
-$string ['rubrcismustbeidentical'] = 'Rubrics must be identical to be able to compare them';
+$string ['rubrcismustbeidentical'] = 'Assessment guidelines must be identical to be able to compare them';
 $string ['gradescheck'] = 'The minimum score may not be equal to or greater than the maximum score.';
 // EMARKING ORM
 $string['printquiz'] = 'Download quiz';
@@ -496,8 +496,8 @@ $string ['adjustslopescore_help'] = 'The score used to calculate the slope betwe
 $string ['adjustslopegrademustbegreaterthanmin'] = 'Grade for adjusting must be greater than the minimum grade';
 $string ['adjustslopegrademustbelowerthanmax'] = 'Grade for adjusting must be lower than the maximum grade';
 $string ['adjustslopescoregreaterthanzero'] = 'Score for adjusting must be greater than 0';
-$string ['linkrubric'] = 'Multicolor rubric';
-$string ['linkrubric_help'] = 'A multicolor rubric shows a different color for each criterion, both for marks and comments.';
+$string ['linkrubric'] = 'Multicolor assessment guideline';
+$string ['linkrubric_help'] = 'A multicolor assessment guideline shows a different color for each criterion, both for marks and comments.';
 $string ['collaborativefeatures'] = 'Markers collaboration';
 $string ['collaborativefeatures_help'] = 'Enables a chat, a wall and SOS for markers. The chat allows communication between markers. The wall allows supervisors (teachers or admins) to post messages, markers can only read them. The SOS allows markers to ask for help regarding a specific exam they are marking.';
 $string ['includeenrolments'] = 'Include students from';
@@ -567,7 +567,7 @@ $string ['doyouwantdeleterelationship'] = 'Do you want delete the permission?';
 $string ['managepermissions'] = 'Manage permissions printers';
 $string ['emptypermissions'] = 'There are no permissions';
 $string ['addpermission'] = 'Add permission';
-$string ['annotatesubmission_help'] = 'EMarking allows to mark digitized exams using rubrics. In this page you can see the course list and their submissions (digitized answers). It also shows the exam status, that can be missing for a student with no answers, submitted if it has not been graded, responded when the marking is finished and regrading when a regrade request was made by a student.';
+$string ['annotatesubmission_help'] = 'EMarking allows to mark digitized exams using assessment guidelines. In this page you can see the course list and their submissions (digitized answers). It also shows the exam status, that can be missing for a student with no answers, submitted if it has not been graded, responded when the marking is finished and regrading when a regrade request was made by a student.';
 $string ['regrades_help'] = 'This page shows the regrade requests made by students.';
 $string ['ranking'] = 'Ranking';
 $string ['areyousure'] = 'Are you sure?';
@@ -580,10 +580,10 @@ $string ['categoryselect_help'] = 'Please select the category where you want to 
 $string ['categoryselect'] = 'Chose a category';
 $string ['close'] = 'Close';
 $string ['comment'] = 'Comment';
-$string ['completerubric'] = 'Complete rubric';
+$string ['completerubric'] = 'Complete assessment guideline';
 $string ['copycenterinstructions'] = 'Copy center instructions';
 $string ['corrected'] = 'Marked';
-$string ['createrubric'] = 'Create rubric';
+$string ['createrubric'] = 'Create assessment guideline';
 $string ['criterion'] = 'Criterion';
 $string ['criteriaefficiency'] = 'Criteria efficiency';
 $string ['doubleside'] = 'Double Side';
@@ -653,12 +653,12 @@ $string ['modulename_help'] = 'The E-Marking module allows:<br/>
     </ul>
     <strong>On Screen Marking</strong>
     <ul>
-    <li>Mark students\' answers using rubrics, custom marks and predefined comments to provide better feedback. Several markers can collaborate and reuse each others comments.</li>
+    <li>Mark students\' answers using assessment guidelines, custom marks and predefined comments to provide better feedback. Several markers can collaborate and reuse each others comments.</li>
     <li>Mark anonymously so markers won\'t be biased if they know the student.</li>
     <li>Double mark a sample of the exams for quality control.</li>
     <li>Help markers collaborate through a chat, having supervisor\'s messages on a wall and asking for help when they see an answer they don\'t feel confident to grade (1).</li>
-    <li>Train markers on interpreting a rubric using selected answers and forcing them to reach consensus.</li>
-    <li>Supervise the marking process and obtain grade reports per student, per rubric criteria and per marker.</li>
+    <li>Train markers on interpreting an assessment guideline using selected answers and forcing them to reach consensus.</li>
+    <li>Supervise the marking process and obtain grade reports per student, per assessment guideline criteria and per marker.</li>
     </ul>
     <strong>Feedback</strong>
     <ul>

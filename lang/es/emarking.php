@@ -24,7 +24,7 @@
 // EXCEPTION DIGITIZING
 $string['qrextractorconfigrequired'] = 'ERROR FATAL: El archivo config.php en emarking/lib/qrextractor no se pudo encontrar. Imposible procesar respuestas digitalizadas.';
 // MARKING BUTTONS.
-$string['buttonrubric'] = 'Rúbrica';
+$string['buttonrubric'] = 'Pauta de evaluación';
 $string['buttoncomment'] = 'Comentario';
 $string['buttontick'] = 'Correcto';
 $string['buttoncross'] = 'Incorrecto';
@@ -59,7 +59,7 @@ $string ['scan'] = 'Digitalizar';
 $string ['enablescan'] = 'Habilitar digitalización';
 $string ['scanisenabled'] = 'Digitalización está habilitada. La corrección es manual, las respuestas se digitalizan y se suben al sistema como respaldo.';
 $string ['scanwasenabled'] = 'Digitalización habilitada exitosamente.';
-$string ['osmisenabled'] = 'Digitalización está habilitada. Las respuestas se digitalizan y se suben al sistema para ser corregidas en pantalla usando una rúbrica.';
+$string ['osmisenabled'] = 'Digitalización está habilitada. Las respuestas se digitalizan y se suben al sistema para ser corregidas en pantalla usando una pauta de evaluación.';
 $string ['enableosm'] = 'Habilitar corrección en pantalla';
 $string ['enableosm_help'] = 'Debe habilitar la digitalización para poder habilitar la corrección en pantalla';
 $string ['emarkingwithnoexam'] = 'Existe un problema de configuración con su actividad. Por favor notifique al administrador.';
@@ -107,26 +107,26 @@ $string ['justificationrequired'] = 'Debe justificar su solicitud';
 // MARKERS AND PAGES OSM CONFIGURATION.
 $string ['markerspercriteria'] = 'Correctores';
 $string ['pagespercriteria'] = 'Páginas';
-$string ['markerscanseewholerubric'] = 'Correctores pueden ver la rúbrica completa.';
+$string ['markerscanseewholerubric'] = 'Correctores pueden ver la pauta de evaluación completa.';
 $string ['markerscanseeallpages'] = 'Correctores ven todas las páginas.';
 $string ['markerscanseeselectedcriteria'] = 'Correctores ven solamente criterios que se le han asignado.';
 $string ['markerscanseenothing'] = 'Hay páginas asignadas a criterios, pero no correctores. Esto provocará que solo los administradores puedan ver las páginas.';
 $string ['markerscanseepageswithcriteria'] = 'Correctores ven solo las páginas de los criterios que tienen asignados.';
 $string ['assignedmarkers'] = 'Correctores asignados';
 $string ['assignedoutcomes'] = 'Resultados asignados';
-$string ['nooutcomesassigned'] = 'No hay resultados asociados a la rúbrica de esta prueba';
+$string ['nooutcomesassigned'] = 'No hay resultados asociados a la pauta de evaluación de esta prueba';
 $string ['assignmarkerstocriteria'] = 'Agregar correctores a criterios';
 $string ['assignoutcomestocriteria'] = 'Agregar resultados a criterios';
 $string ['currentstatus'] = 'Configuración actual';
 $string ['noneditingteacherconfiguration'] = 'Como ayudante no puedes modificar la configuración.';
-$string ['coursehasnooutcomes'] = 'El curso no tiene resultados de aprendizaje asociados. Además deberá asociar resultados de aprendizaje a la prueba emarking. Al menos un resultado debe asociarse para poder relacionarlo con la rúbrica.';
+$string ['coursehasnooutcomes'] = 'El curso no tiene resultados de aprendizaje asociados. Además deberá asociar resultados de aprendizaje a la prueba emarking. Al menos un resultado debe asociarse para poder relacionarlo con la pauta de evaluación.';
 $string ['gotooutcomessettings'] = 'Ir a configuración de resultados de aprendizaje';
-$string ['emarkinghasnooutcomes'] = 'La prueba no tiene asociado ningún resultado de aprendizaje. Al menos un resultado debe asociarse para poder relacionarlo con la rúbrica.';
+$string ['emarkinghasnooutcomes'] = 'La prueba no tiene asociado ningún resultado de aprendizaje. Al menos un resultado debe asociarse para poder relacionarlo con la pauta de evaluación.';
 $string ['gotoemarkingsettings'] = 'Ir a configuración de emarking';
 $string ['emarkingdst'] = 'EMarking destino';
 $string ['emarkingdst_help'] = 'Seleccione las pruebas EMarking a las que copiará la configuración';
-$string ['override'] = 'Sobreescribir rúbrica';
-$string ['override_help'] = 'Sobreescribe la rúbrica de la prueba EMarking destino, usando la de esta prueba';
+$string ['override'] = 'Sobreescribir pauta de evaluación';
+$string ['override_help'] = 'Sobreescribe la pauta de evaluación de la prueba EMarking destino, usando la de esta prueba';
 $string ['overridemarkers'] = 'Sobreescribir correctores';
 $string ['overridemarkers_help'] = 'Sobreescribe los correctores asignados en la prueba EMarking destino';
 $string ['noparallelemarkings'] = 'No hay pruebas EMarking en los cursos paralelos';
@@ -134,12 +134,12 @@ $string ['scalelevels'] = 'Porcentajes para escala';
 $string ['studentachievement'] = '% de estudiantes';
 $string ['level'] = 'Nivel de logro';
 $string ['outcomesnotconfigured'] = 'No se han configurado resultados de aprendizaje para esta prueba E-Marking';
-$string['coloredrubricforced'] = 'Forzar rúbrica multicolor';
-$string['coloredrubricforced_help'] = 'Fuerza todas las actividades Emarking a utilizar rúbricas multicolor, ignorando la configuración del usuario';
+$string['coloredrubricforced'] = 'Forzar pauta de evaluación multicolor';
+$string['coloredrubricforced_help'] = 'Fuerza todas las actividades Emarking a utilizar pautas de evaluación multicolor, ignorando la configuración del usuario';
 $string['formativefeedbackonly'] = 'Solo retroalimentación formativa';
-$string['formativefeedbackonly_help'] = 'No muestra retroalimentación sumativa (puntajes en la rúbrica o calificación final)';
-$string['rubriclevelsorting'] = 'Orden de niveles en la rúbrica';
-$string['rubriclevelsorting_help'] = 'Indica cómo se ordenarán los niveles de cada criterio en la rúbrica. Puede ser ascendente o descendente.';
+$string['formativefeedbackonly_help'] = 'No muestra retroalimentación sumativa (puntajes en la pauta de evaluación o calificación final)';
+$string['rubriclevelsorting'] = 'Orden de niveles en la pauta de evaluación';
+$string['rubriclevelsorting_help'] = 'Indica cómo se ordenarán los niveles de cada criterio en la pauta de evaluación. Puede ser ascendente o descendente.';
 // GENERAL.
 $string ['criteria'] = 'Criterios';
 $string ['deleterow'] = 'Borrar fila';
@@ -234,10 +234,10 @@ $string ['justiceperceptionexpectationcriterion'] = '¿Cómo se compara su punta
 $string ['thanksforjusticeperception'] = 'Gracias por expresar su opinión';
 $string ['justicedisabled'] = 'Deshabilitada';
 $string ['justicepersubmission'] = 'Solicitar una opinión por prueba';
-$string ['justicepercriterion'] = 'Solicitar una opinión por criterio de la rúbrica';
+$string ['justicepercriterion'] = 'Solicitar una opinión por criterio de la pauta de evaluación';
 $string ['justice'] = 'Justicia';
 $string ['justiceperception'] = 'Preguntar percepción de justicia';
-$string ['justiceperception_help'] = 'Esta opción permite a los estudiantes entregar su percepción de justicia respecto del proceso de corrección (justicia procedural) y su resultado (justicia distributiva). Se puede preguntar por la prueba en general o por cada criterio de la rúbrica.';
+$string ['justiceperception_help'] = 'Esta opción permite a los estudiantes entregar su percepción de justicia respecto del proceso de corrección (justicia procedural) y su resultado (justicia distributiva). Se puede preguntar por la prueba en general o por cada criterio de la pauta de evaluación.';
 $string ['agreementflexibility'] = 'Flexibilidad de acuerdo';
 $string ['agreementflexibility_help'] = 'Define la diferencia máxima entre las calificaciones entregadas por un corrector y el promedio de los demás correctores para ser considerado fuera de rango.';
 $string ['agreementflexibility00'] = 'Estricto (calificaciones deben ser iguales)';
@@ -292,8 +292,8 @@ $string ['updatemark'] = 'Cambiar corrección';
 $string ['notenoughstudenstforpeerreview'] = 'No hay suficientes estudiantes para revisión entre pares';
 $string ['reassignpeers'] = 'Reasignar pares';
 $string ['markernotassigned'] = 'No asignado';
-$string ['importemarking'] = 'Importar respuestas y rúbrica';
-$string ['importemarking_help'] = 'Importar EMarking permite importar las respuestas de los estudiantes y la rúbrica desde otra actividad EMarking.';
+$string ['importemarking'] = 'Importar respuestas y pauta de evaluación';
+$string ['importemarking_help'] = 'Importar EMarking permite importar las respuestas de los estudiantes y la pauta de evaluación desde otra actividad EMarking.';
 $string ['donotimport'] = 'No importar';
 // ANONYMOUS.
 $string ['studentanonymous_markervisible'] = 'Estudiante anónimo / Corrector visible';
@@ -306,14 +306,14 @@ $string ['anonymous_help'] = 'Seleccione para que el proceso de corrección sea 
 $string ['anonymousstudent'] = 'Estudiante anónimo';
 $string ['viewpeers'] = 'Estudiantes ven pruebas de otros estudiantes';
 $string ['viewpeers_help'] = 'Se le permite a los estudiantes revisar pruebas de sus compañeros de manera anónima';
-// EMARKING IMPORT RUBRIC.
+// EMARKING IMPORT ASSESSMENT GUIDELINE.
 $string ['rubriclevel'] = 'Nivel';
-$string ['importrubric'] = 'Importar rúbrica';
+$string ['importrubric'] = 'Importar pauta de evaluación';
 $string ['pastefromexcel'] = 'Pegar desde Excel';
 $string ['pastefromexcel_help'] = 'Seleccione las celdas deseadas en Excel, cópielas y luego péguelas en el cuadro de texto';
-$string ['rubricneeded'] = 'EMarking requiere el uso de rúbricas para la corrección. Por favor cree una manualmente o impórtela desde Excel.';
-$string ['rubricdraft'] = 'EMarking requiere una rúbrica lista, la rúbrica se encuentra en estado de borrador. Por favor completar rúbrica';
-$string ['confirmimport'] = 'A continuación se muestra la rúbrica que será creada, por favor verifique que todos los detalles están correctos. NOTA: La rúbrica puede modificarse posteriormente en el editor.';
+$string ['rubricneeded'] = 'EMarking requiere el uso de pautas de evaluación para la corrección. Por favor cree una manualmente o impórtela desde Excel.';
+$string ['rubricdraft'] = 'EMarking requiere una pauta de evaluación lista, la pauta de evaluación se encuentra en estado de borrador. Por favor completar pauta de evaluación';
+$string ['confirmimport'] = 'A continuación se muestra la pauta de evaluación que será creada, por favor verifique que todos los detalles están correctos. NOTA: La pauta de evaluación puede modificarse posteriormente en el editor.';
 // E-MARKING TYPES.
 $string ['markingtype'] = 'Tipo de corrección';
 $string ['markingtype_help'] = '<h2>Tipos de corrección</h2><br>
@@ -321,7 +321,7 @@ $string ['markingtype_help'] = '<h2>Tipos de corrección</h2><br>
 		<ul>
 			<li><b>Solo impresión</b>: Las pruebas se imprimen a través del sistema, la corrección es manual, y opcionalmente se pueden subir las notas al libro de calificaciones.</li>
 			<li><b>Imprimir y digitalizar</b>: Las pruebas se imprimen a través del sistema, la corrección es manual, las respuestas se digitalizan y se suben al sistema como respaldo. Opcionalmente se pueden subir las notas al libro de calificaciones.</li>
-            <li><b>Corrección en pantalla</b>: Pruebas se imprimen, digitalizan y la corrección se realiza en línea de acuerdo a una rúbrica. Las pruebas pueden ser corregidas por más de un corrector para control de calidad.</li>
+            <li><b>Corrección en pantalla</b>: Pruebas se imprimen, digitalizan y la corrección se realiza en línea de acuerdo a una pauta de evaluación. Las pruebas pueden ser corregidas por más de un corrector para control de calidad.</li>
 			<li><b>Entrenamiento de correctores</b>: Las pruebas no pertenecen a estudiantes del curso. Todos los correctores corrigen todas las pruebas y deben alcanzar un acuerdo de 100% para finalizar el proceso.</li>
 			<li><b>Entrenamiento de estudiantes</b>: Las pruebas no pertenecen a estudiantes del curso. Los estudiantes corrigen como práctica para su próxima evaluación.</li>
 			<li><b>Revisión entre pares</b>: Los estudiantes se corrigen entre si de acuerdo a la configuración de grupos. Si hay grupos configurados (visibles o separados), cada estudiante corrige todas las pruebas de otro grupo.</li>
@@ -460,7 +460,7 @@ $string ['exportgrades'] = 'Exportar calificaciones';
 $string ['exportagreement'] = 'Exportar acuerdo';
 $string ['comparativereport'] = 'Comparativo';
 $string ['comparativereport_help'] = 'Comparativo';
-$string ['rubrcismustbeidentical'] = 'Las rúbricas deben ser idénticas para poder comparar';
+$string ['rubrcismustbeidentical'] = 'Las pautas de evaluación deben ser idénticas para poder comparar';
 // EMARKING ORM
 $string['printquiz'] = 'Descargar cuestionario';
 $string['previewquiz'] = 'Previsualizar cuestionario';
@@ -496,8 +496,8 @@ $string ['adjustslopescore_help'] = 'El puntaje usado para calcular la pendiente
 $string ['adjustslopegrademustbegreaterthanmin'] = 'Calificación de ajuste debe ser mayor que la calificación mínima';
 $string ['adjustslopegrademustbelowerthanmax'] = 'Calificación de ajuste debe ser menor que la calificación máxima';
 $string ['adjustslopescoregreaterthanzero'] = 'Puntaje de ajuste debe ser mayor que 0';
-$string ['linkrubric'] = 'Rúbrica multicolor';
-$string ['linkrubric_help'] = 'Una rúbrica multicolor mostrará un color diferente para cada criterio, tanto para las correcciones (cruces o ticks) como para los comentarios.';
+$string ['linkrubric'] = 'Pauta de evaluación multicolor';
+$string ['linkrubric_help'] = 'Una pauta de evaluación multicolor mostrará un color diferente para cada criterio, tanto para las correcciones (cruces o ticks) como para los comentarios.';
 $string ['collaborativefeatures'] = 'Colaboración entre correctores';
 $string ['collaborativefeatures_help'] = 'Habilita el chat, el muro y el SOS para la colaboración de correctores. El chat permite a correctores comunicarse entre si. El muro permite a supervisores (profesor o administrador) enviar mensajes, los correctores no pueden escribir en el muro. El SOS permite a correctores solicitar ayuda respecto de una prueba que están corrigiendo.';
 $string ['includeenrolments'] = 'Incluir estudiantes de';
@@ -578,10 +578,10 @@ $string ['average'] = 'Promedio';
 $string ['backcourse'] = 'Regresar al curso';
 $string ['close'] = 'Cerrar';
 $string ['comment'] = 'Comentario';
-$string ['completerubric'] = 'Completar rúbrica';
+$string ['completerubric'] = 'Completar pauta de evaluación';
 $string ['copycenterinstructions'] = 'Instrucciones para centro de copiado';
 $string ['corrected'] = 'Corregido';
-$string ['createrubric'] = 'Crear rúbrica';
+$string ['createrubric'] = 'Crear pauta de evaluación';
 $string ['criterion'] = 'Criterio';
 $string ['criteriaefficiency'] = 'Eficiencia por criterio';
 $string ['digitizedfile'] = 'Subir respuestas digitalizadas';
@@ -661,12 +661,12 @@ $string ['modulename_help'] = 'El módulo E-Marking permite:<br/>
     </ul>
     <strong>Corrección En Pantalla</strong>
     <ul>
-    <li>Corrija las pruebas usando rúbricas, marcadores personalizados y comentarios predefinidos para entregar retroalimentación de calidad. Varios correctores pueden colaborar y compartir los comentarios que dejan.</li>
+    <li>Corrija las pruebas usando pautas de evaluación, marcadores personalizados y comentarios predefinidos para entregar retroalimentación de calidad. Varios correctores pueden colaborar y compartir los comentarios que dejan.</li>
     <li>Corrija anónimamente para que correctores no puedan sesgarse de conocer a un estudiante.</li>
     <li>Corrija doblemente una muestra de las pruebas para control de calidad.</li>
     <li>Ayude a correctores a colaborar interactuando a través de un chat, con un muro de mensajes del supervisor y pidiendo ayuda cuando no estén seguros de una corrección (1).</li>
-    <li>Entrene correctores en interpretar una rúbrica usando pruebas seleccionadas y forzándolos a alcanzar un consenso.</li>
-    <li>Supervise el proceso de corrección y obtenga reportes por estudiante, por criterio de la rúbrica y por corrector.</li>
+    <li>Entrene correctores en interpretar una pauta de evaluación usando pruebas seleccionadas y forzándolos a alcanzar un consenso.</li>
+    <li>Supervise el proceso de corrección y obtenga reportes por estudiante, por criterio de la pauta de evaluación y por corrector.</li>
     </ul>
     <strong>Retroalimentación</strong>
     <ul>
