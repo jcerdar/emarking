@@ -34,7 +34,7 @@ class local_ciae_rubric_form extends moodleform {
 		
 		$mform = $this->_form; // Don't forget the underscore!
 		                       // Paso 1 Información básica
-		$mform->addElement ( 'header', 'db', 'Información Rúbrica', null );
+		$mform->addElement ( 'header', 'db', 'Información Pauta de evaluación', null );
 		
 		
 		// name

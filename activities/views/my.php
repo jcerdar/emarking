@@ -18,7 +18,7 @@
 					echo '<img src="' . $image . '" alt="Smiley face" height="100"	width="100">';
 					echo '<h4>Miembro nivel 5</h4>';
 					echo '<p>' . $countActivities . ' Actividade(s) Publicada(s)</p>';
-					echo '<p>' . $countRubrics . ' Rúbricas Publicadas</p>';
+					echo '<p>' . $countRubrics . ' Pautas de evaluación Publicadas</p>';
 					echo '<p>0 Opiniones</p>';
 					echo '<p>0 Votos</p>';
 					

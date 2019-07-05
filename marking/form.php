@@ -87,7 +87,7 @@ class EditExperimentalGroupForm extends moodleform {
         $mform->addElement('date_time_selector', 'dateend', "Date End");
         $mform->setType('dateend', PARAM_INT);
         $mform->addRule('dateend', get_string('editcomment', 'mod_emarking'), 'required');
-        $mform->addElement('checkbox', 'linkrubric', "Vicular rúbrica a comentario");
+        $mform->addElement('checkbox', 'linkrubric', "Vicular pauta de evaluación a comentario");
         $mform->setType('linkrubric', PARAM_INT);
         $mform->addElement('hidden', 'id', $id);
         $mform->setType('id', PARAM_INT);

@@ -189,7 +189,7 @@ function add_row(result=null){
 function validateform(){  
 	var name=document.rubricCreator.rubricname.value; 
 	if (name==null || name==""){  
-	  alert("Debes ingresar un nombre a la rúbrica.");  
+	  alert("Debes ingresar un nombre a la pauta de evaluación.");
 	  return false;  
 	}  
 	}  
