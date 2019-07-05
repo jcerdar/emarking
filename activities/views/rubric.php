@@ -3,7 +3,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h3>Crear rúbrica</h3>
+				<h3>Crear pauta de evaluación</h3>
 				<div class="container">
 					<form action="" method="post" onsubmit="return validateform()" name="rubricCreator">
 						<div class="form-group">
@@ -38,7 +38,7 @@
 												value="Crear criterio" />
 											<button name="submit" type="submit"
 												class="btn btn-primary btn-md" value="Crear rúbrica" />
-											Crear rúbrica
+											Crear pauta de evaluación
 										</div>
 									</td>
 								</tr>

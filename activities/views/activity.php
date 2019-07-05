@@ -42,7 +42,7 @@ $(function() {
 						?>
 						<div class="activity_buttons">
 						<a href="<?=$rubricUrl?>"><button type="button" class="btn btn-warning">
-							<span class="glyphicon glyphicon-paperclip"></span> Crear Rúbrica
+							<span class="glyphicon glyphicon-paperclip"></span> Crear Pauta de evaluación
 						</button></a>
 						</div>						
 						<?php
@@ -51,12 +51,12 @@ $(function() {
 						?>
 						<div class="activity_buttons">
 						<a href="<?=$importrubricUrl?>"><button type="button" class="btn btn-warning">
-							<span class="glyphicon glyphicon-paperclip"></span> Importar Rúbrica
+							<span class="glyphicon glyphicon-paperclip"></span> Importar Pauta de evaluación
 						</button></a>
 						</div>
 						<div class="activity_buttons">
 						<a href="<?=$rubricUrl?>"><button type="button" class="btn btn-warning">
-							<span class="glyphicon glyphicon-paperclip"></span> Editar Rúbrica
+							<span class="glyphicon glyphicon-paperclip"></span> Editar Pauta de evaluación
 						</button></a>
 						</div>
 						<?php
@@ -140,7 +140,7 @@ $(function() {
 						if(isset($disabled) && $disabled!=null){
 					?>
 						<div class="alert alert-warning">
-						  <strong>Atención!</strong> Es necesario crear una rúbrica para que esta actividad pueda ser utilizada. <a href="<?=$rubricUrl?>">Crear Rúbrica</a> o <a href="<?=$importrubricUrl?>">Importar Rúbrica</a>
+						  <strong>Atención!</strong> Es necesario crear una pauta de evaluación para que esta actividad pueda ser utilizada. <a href="<?=$rubricUrl?>">Crear Rúbrica</a> o <a href="<?=$importrubricUrl?>">Importar Rúbrica</a>
 						</div>
 					<?php }?>
 						<h3 class="title_result">
