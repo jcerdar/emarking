@@ -163,13 +163,11 @@ if ($usercangrade) {
 			emarking_time_ago ( $exam->timecreated ) 
 	);
 
-	//get the actual count of students with the required enrolment
-	$students = emarking_get_students_count_for_printing($course->id, $exam);
-
 	$totalsheetsmessage = new stdClass();
 	$totalsheetsmessage->copies = $exam->totalstudents + $exam->extraexams;
 	$totalsheetsmessage->originals = $exam->totalpages + $exam->extrasheets;
 	$totalsheetsmessage->totalsheets = $totalsheetsmessage->originals * $totalsheetsmessage->copies;
+
 	$examstable->data [] = array (
 			get_string ( 'totalpagesprint', 'mod_emarking'),
 			get_string ( 'totalpagesprintdetails', 'mod_emarking', $totalsheetsmessage)
