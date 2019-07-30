@@ -167,7 +167,7 @@ if ($usercangrade) {
 	$students = emarking_get_students_count_for_printing($course->id, $exam);
 
 	$totalsheetsmessage = new stdClass();
-	$totalsheetsmessage->copies = $students + $exam->extraexams;
+	$totalsheetsmessage->copies = $exam->totalstudents + $exam->extraexams;
 	$totalsheetsmessage->originals = $exam->totalpages + $exam->extrasheets;
 	$totalsheetsmessage->totalsheets = $totalsheetsmessage->originals * $totalsheetsmessage->copies;
 	$examstable->data [] = array (

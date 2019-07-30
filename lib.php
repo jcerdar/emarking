@@ -240,7 +240,7 @@ function emarking_add_instance(stdClass $data, mod_emarking_mod_form $mform = nu
 	} else {
 		$examid = $data->exam;
 	}
-	$studentsnumber = emarking_get_students_count_for_printing ( $COURSE->id );
+	
 	// A new exam object is created and its attributes filled from form data.
 	if ($examid == 0) {
 		$exam = new stdClass ();
@@ -260,7 +260,7 @@ function emarking_add_instance(stdClass $data, mod_emarking_mod_form $mform = nu
 		}
 		$exam->timemodified = time ();
 		$exam->requestedby = $USER->id;
-		$exam->totalstudents = $studentsnumber;
+		
 		$exam->comment = $mform->get_data ()->comment;
 		// Get the enrolments as a comma separated values.
 		$enrollist = array ();
@@ -273,6 +273,10 @@ function emarking_add_instance(stdClass $data, mod_emarking_mod_form $mform = nu
 			}
 		}
 		$exam->enrolments = implode ( ",", $enrollist );
+
+		$studentsnumber = emarking_get_students_count_for_printing ( $COURSE->id, $exam );
+		$exam->totalstudents = $studentsnumber;
+		
 		$exam->printdate = 0;
 		$exam->status = EMARKING_EXAM_UPLOADED;
 		// Calculate total pages for exam.
