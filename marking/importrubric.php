@@ -171,10 +171,10 @@ if ($predefinedform->get_data()) {
     $samplerubric = '/mod/emarking/img/rubric_' . $langshort . '.xlsx';
     if (file_exists($CFG->dirroot . $samplerubric)) {
         $rubricurl = new moodle_url($samplerubric);
-        $seesample = 'See sample rubric template ' .
-                 html_writer::link($rubricurl, $OUTPUT->pix_icon('f/spreadsheet', 'Download sample rubric template'));
+        $seesample = 'See sample assessment guideline template ' .
+                 html_writer::link($rubricurl, $OUTPUT->pix_icon('f/spreadsheet', 'Download sample assessment guideline template'));
     }
-    echo $OUTPUT->box('Import rubric by copy and pasting criteria from a spreadsheet. ' . $seesample, null, null,
+    echo $OUTPUT->box('Import assessment guideline by copy and pasting criteria from a spreadsheet. ' . $seesample, null, null,
             array(
                 'style' => 'margin-bottom:10px;'));
     // Action buttons.
