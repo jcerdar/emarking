@@ -162,10 +162,12 @@ if ($usercangrade) {
 			get_string ( "sent", "mod_emarking" ),
 			emarking_time_ago ( $exam->timecreated ) 
 	);
+
 	$totalsheetsmessage = new stdClass();
-	$totalsheetsmessage->originals = $exam->totalpages + $exam->extrasheets;
 	$totalsheetsmessage->copies = $exam->totalstudents + $exam->extraexams;
+	$totalsheetsmessage->originals = $exam->totalpages + $exam->extrasheets;
 	$totalsheetsmessage->totalsheets = $totalsheetsmessage->originals * $totalsheetsmessage->copies;
+
 	$examstable->data [] = array (
 			get_string ( 'totalpagesprint', 'mod_emarking'),
 			get_string ( 'totalpagesprintdetails', 'mod_emarking', $totalsheetsmessage)
