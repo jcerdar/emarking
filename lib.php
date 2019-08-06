@@ -1073,3 +1073,22 @@ function emarking_extend_settings_navigation(settings_navigation $settingsnav, $
 		) ) );
 	}
 }
+
+function emarking_cm_info_view(cm_info $cm)  {
+    global $DB;
+
+    $course_module = $DB->get_record ( 'course_modules', array ('id' => $cm->id));
+    $module = $DB->get_record ( 'modules', array ('id' => $course_module->module));
+    $exam = $DB->get_record ( 'emarking_exams', array ('emarking' => $course_module->instance));
+
+    if ($module->name == 'emarking' && $exam && $exam->status >= EMARKING_EXAM_SENT_TO_PRINT) {
+        $cm->set_after_link("<script>
+            window.addEventListener('DOMContentLoaded', (event) => {
+                var container = document.querySelector('#module-".$cm->id."');
+                var childNode = container.querySelector('.editing_delete');
+               childNode.style.display = 'none';
+            }); 
+          </script>
+        ");
+    }
+}
