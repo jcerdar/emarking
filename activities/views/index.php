@@ -169,7 +169,7 @@
 				<h4>Correctores</h4>
 				<img src="img/index/img_ayudante.png">
 				<p class="text_grey" align="justify">Los correctores en línea son profesores que se
-					han capacitado en las rúbricas y pautas de evaluación para llevar a
+					han capacitado en las pautas de evaluación para llevar a
 					cabo una evaluación experta de los textos subidos a la plataforma
 					por otros profesores.</p>
 			</div>

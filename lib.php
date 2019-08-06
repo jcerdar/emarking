@@ -240,7 +240,7 @@ function emarking_add_instance(stdClass $data, mod_emarking_mod_form $mform = nu
 	} else {
 		$examid = $data->exam;
 	}
-	$studentsnumber = emarking_get_students_count_for_printing ( $COURSE->id );
+	
 	// A new exam object is created and its attributes filled from form data.
 	if ($examid == 0) {
 		$exam = new stdClass ();
@@ -260,7 +260,7 @@ function emarking_add_instance(stdClass $data, mod_emarking_mod_form $mform = nu
 		}
 		$exam->timemodified = time ();
 		$exam->requestedby = $USER->id;
-		$exam->totalstudents = $studentsnumber;
+		
 		$exam->comment = $mform->get_data ()->comment;
 		// Get the enrolments as a comma separated values.
 		$enrollist = array ();
@@ -273,6 +273,10 @@ function emarking_add_instance(stdClass $data, mod_emarking_mod_form $mform = nu
 			}
 		}
 		$exam->enrolments = implode ( ",", $enrollist );
+
+		$studentsnumber = emarking_get_students_count_for_printing ( $COURSE->id, $exam );
+		$exam->totalstudents = $studentsnumber;
+		
 		$exam->printdate = 0;
 		$exam->status = EMARKING_EXAM_UPLOADED;
 		// Calculate total pages for exam.
@@ -1068,4 +1072,23 @@ function emarking_extend_settings_navigation(settings_navigation $settingsnav, $
 				'sesskey' => $USER->sesskey 
 		) ) );
 	}
+}
+
+function emarking_cm_info_view(cm_info $cm)  {
+    global $DB;
+
+    $course_module = $DB->get_record ( 'course_modules', array ('id' => $cm->id));
+    $module = $DB->get_record ( 'modules', array ('id' => $course_module->module));
+    $exam = $DB->get_record ( 'emarking_exams', array ('emarking' => $course_module->instance));
+
+    if ($module->name == 'emarking' && $exam && $exam->status >= EMARKING_EXAM_SENT_TO_PRINT) {
+        $cm->set_after_link("<script>
+            window.addEventListener('DOMContentLoaded', (event) => {
+                var container = document.querySelector('#module-".$cm->id."');
+                var childNode = container.querySelector('.editing_delete');
+               childNode.style.display = 'none';
+            }); 
+          </script>
+        ");
+    }
 }

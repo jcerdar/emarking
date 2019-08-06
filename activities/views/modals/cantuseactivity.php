@@ -8,7 +8,7 @@
 				<h4 class="modal-title">Usar actividad</h4>
 			</div>
 			<div class="modal-body">
-				<h2>Antes de usar esta actividad, debes crear una rúbrica.</h2>
+				<h2>Antes de usar esta actividad, debes crear una pauta de evaluación.</h2>
 			</div>
 			
 		</div>

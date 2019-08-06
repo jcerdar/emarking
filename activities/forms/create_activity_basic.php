@@ -43,7 +43,7 @@ class mod_emarking_activities_create_activity_basic extends moodleform {
                gd.method=? AND
                ga.contextid=? AND
                ga.component=?', array('rubric',1,'core_grading'));
-       $rubrics[0]= 'Seleccione una rúbrica';
+       $rubrics[0]= 'Seleccione una pauta de evaluación';
         foreach ($result as $data) {
             $rubrics[$data->id]=$data->name;
         }

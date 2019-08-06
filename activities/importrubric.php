@@ -177,10 +177,10 @@ if ($importrubricform->get_data()) {
 	$samplerubric = '/mod/emarking/img/rubric_formative.xlsx';
 	if (file_exists($CFG->dirroot . $samplerubric)) {
 		$rubricurl = new moodle_url($samplerubric);
-		$seesample = 'Descargar plantilla para rúbrica ' .
-				html_writer::link($rubricurl, $OUTPUT->pix_icon('f/spreadsheet', 'Descargar plantilla para rúbrica'));
+		$seesample = 'Descargar plantilla para pauta de evaluación ' .
+				html_writer::link($rubricurl, $OUTPUT->pix_icon('f/spreadsheet', 'Descargar plantilla para pauta de evaluación'));
 	}
-	echo $OUTPUT->box('Importar rúbrica copiando y pegando desde una planilla Excel. ' . $seesample, null, null,
+	echo $OUTPUT->box('Importar pauta de evaluación copiando y pegando desde una planilla Excel. ' . $seesample, null, null,
 			array(
 					'style' => 'margin-bottom:10px;'));
     // Action buttons.
