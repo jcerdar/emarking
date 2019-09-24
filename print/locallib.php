@@ -255,6 +255,10 @@ function emarking_get_students_count_for_printing($courseid, $exam = null) {
             $sqlenrolments = " AND e.enrol IN ($sqlenrolments)";
         }
     }
+
+    $roleid = $CFG->role_id_student;
+    mtrace("$roleid rol por defecto");
+
     $query = "SELECT count(u.id) as total
 			FROM {user_enrolments} ue
 			JOIN {enrol} e ON (e.id = ue.enrolid AND e.courseid = ? $sqlenrolments)
@@ -263,6 +267,8 @@ function emarking_get_students_count_for_printing($courseid, $exam = null) {
 			JOIN {user} u ON (ue.userid = u.id)
 			GROUP BY e.courseid";
     // Se toman los resultados del query dentro de una variable.
+    mtrace("Query Students");
+    mtrace($query);
     $rs = $DB->get_record_sql($query, array(
         $courseid
     ));
