@@ -902,3 +902,6 @@ $string['disabled'] = 'Disabled';
 $string['changelog'] = 'Change log';
 $string['changelog_help'] = 'Allows students to write a change log as a follow up activity after reviewing their feedback.';
 $string['motiverequired'] = 'You must select a motive.';
+
+$string['roleidstudent'] = 'Rol Id students.';
+$string['roleidstudent_help'] = 'Rol Id that emarking will use to identify students enrolled in courses.';
