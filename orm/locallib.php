@@ -658,7 +658,7 @@ function emarking_get_count_enroled_students_sql($courseid = 0)
 			FROM {user_enrolments} ue
 			JOIN {enrol} e ON (e.id = ue.enrolid)
 			JOIN {context} c ON ($sqlcourse c.contextlevel = 50 AND c.instanceid = e.courseid)
-			JOIN {role_assignments} ra ON (ra.contextid = c.id AND ra.roleid = '. $CFG->role_id_student .' AND ra.userid = ue.userid)
+			JOIN {role_assignments} ra ON (ra.contextid = c.id AND ra.roleid = $CFG->role_id_student AND ra.userid = ue.userid)
 			JOIN {course} cc ON (e.courseid = cc.id)
 			GROUP BY cc.id";
     

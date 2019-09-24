@@ -263,7 +263,7 @@ function emarking_get_students_count_for_printing($courseid, $exam = null) {
 			FROM {user_enrolments} ue
 			JOIN {enrol} e ON (e.id = ue.enrolid AND e.courseid = ? $sqlenrolments)
 			JOIN {context} c ON (c.contextlevel = 50 AND c.instanceid = e.courseid)
-			JOIN {role_assignments} ra ON (ra.contextid = c.id AND ra.roleid = '. $CFG->role_id_student .' AND ra.userid = ue.userid)
+			JOIN {role_assignments} ra ON (ra.contextid = c.id AND ra.roleid = $CFG->role_id_student AND ra.userid = ue.userid)
 			JOIN {user} u ON (ue.userid = u.id)
 			GROUP BY e.courseid";
     // Se toman los resultados del query dentro de una variable.
