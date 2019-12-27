@@ -506,6 +506,7 @@ $string ['enrolments_help'] = 'Solo se incluirán los estudiantes matriculados e
 $string ['enrolmanual'] = 'Matriculaciones manuales';
 $string ['enrolself'] = 'Auto-Matriculaciones';
 $string ['enroldatabase'] = 'Matriculaciones de base de datos externa';
+$string ['enrolcategory'] = 'Matriculaciones por categoría';
 $string ['enrolmeta'] = 'Matriculaciones de metacurso';
 $string ['enrolcohort'] = 'Matriculaciones por cohorte';
 $string ['includestudentsinexam'] = 'Matriculaciones que incluir para impresión personalizada';
