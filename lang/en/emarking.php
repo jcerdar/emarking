@@ -506,6 +506,7 @@ $string ['enrolments_help'] = 'The students considered for the marking will be o
 $string ['enrolmanual'] = 'Manual enrolments';
 $string ['enrolself'] = 'Self-enrolments';
 $string ['enroldatabase'] = 'External database enrolments';
+$string ['enrolcategory'] = 'Category enrolments';
 $string ['enrolmeta'] = 'Meta-link enrolments';
 $string ['enrolcohort'] = 'Cohort enrolments';
 $string ['includestudentsinexam'] = 'Enrolment from which include students in personalized printing';
