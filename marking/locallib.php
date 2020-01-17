@@ -31,7 +31,7 @@
  * @param unknown $context
  * @return multitype:stdClass
  */
-function emarking_get_all_pages($emarking, $submission, $draft, $studentanonymous, $context, $winwidth, $winheight) {
+function emarking_get_all_pages($emarking, $submission, $draft, $studentanonymous, $context, $winwidth = 0, $winheight = 0) {
     global $DB, $CFG, $USER;
     $emarkingpages = array();
     // Get criteria to filter pages.
